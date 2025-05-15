@@ -1,0 +1,29 @@
+.nav-text {
+    position: relative;
+    cursor: pointer;
+    padding: 6px 0px 6px 0px;
+  }
+
+  .link-items:before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 4px;
+    width: 2px;
+    height: 90%;
+    background: transparent;
+    border-radius: 50px;
+  }
+
+  .link-items:focus::before, .link-items.active::before {
+    background: #fff;
+    transition: 2s all;
+  }
+
+  .nav-text a {
+    color: #8e94a9;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
